@@ -51,6 +51,7 @@ class CategoryTableViewController: UITableViewController {
     
     private func getProductsFromChosenCategory() {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        productsOfChosenCategory = []
         for product in importProducts {
             if product.category.rawValue == categories[indexPath.row] {
                 productsOfChosenCategory.append(product)
