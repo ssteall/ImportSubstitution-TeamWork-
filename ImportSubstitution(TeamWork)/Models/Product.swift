@@ -6,24 +6,38 @@
 //
 
 
-struct ImportProduct {
+class ImportProduct {
     let name: String
     let description: String
     let analogues: [RussianProduct]
-    let category: Category
+    var category: Category
     
     static func getProducts() -> [ImportProduct] {
         let products = DataManager.shared.importProduct
         return products
     }
+    
+    init(name: String, description: String, analogues: [RussianProduct], category: Category){
+        self.category = category
+        self.name = name
+        self.description = description
+        self.analogues = analogues
+    }
 }
 
-struct RussianProduct {
+class RussianProduct {
     let name: String
     let description: String
     let price: Double
     let rate: Double
     let chosen = false
+    
+    init(name: String, description: String, price: Double, rate: Double){
+        self.name = name
+        self.description = description
+        self.price = price
+        self.rate = rate
+    }
 }
 
 enum Category: String {
