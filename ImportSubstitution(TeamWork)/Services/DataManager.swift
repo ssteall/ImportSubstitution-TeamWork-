@@ -8,7 +8,7 @@
 class DataManager {
 
     static let shared = DataManager()
-    
+   
         let importProduct = [ImportProduct(name: "Coca-cola",
                                            description: "Газированный безалкогольный напиток, производимый компанией Coca-Cola. Первоначально продававшийся как напиток для замены алкоголя и предназначавшийся в качестве патентного лекарства",
                                            analogues: [RussianProduct(name: "Байкал",
@@ -97,7 +97,53 @@ class DataManager {
                                                                       description: "В онлайн-кинотеатре IVI каталог представлен на главном экране сайта и разбит на различные категории: фильмы, сериалы, музыка, ТВ-каналы, подборки и так далее. В каждом разделе содержимое сортируется по количеству просмотров, но можно этот параметр изменить.",
                                                                       price: 0,
                                                                       rate: 4)],
-                                           category: .software)]
-        
-        private init() {}
+                                           category: .software),
+                         ImportProduct(name: "Тамифлю",
+                                       description: "Противовирусный препарат",
+                                       analogues: [RussianProduct(name: "Циклоферон",
+                                                                  description: "Противовирусный препарат",
+                                                                  price: 255,
+                                                                  rate: 4.6),
+                                                   RussianProduct(name: "Кагоцел",
+                                                                  description: "Противовирусный препарат",
+                                                                  price: 266,
+                                                                  rate: 4.2),
+                                                   RussianProduct(name: "Эргоферон",
+                                                                  description: "Противовирусный препарат",
+                                                                  price: 448,
+                                                                  rate: 4.8)],
+                                       category: .medicines),
+                         ImportProduct(name: "Нурофен",
+                                       description: "Обезболивающие стредсво",
+                                       analogues: [RussianProduct(name: "Ибупрофен",
+                                                                  description: "Обезболивающие стредсво",
+                                                                  price: 33,
+                                                                  rate: 4.2),
+                                                   RussianProduct(name: "Нуралгон",
+                                                                  description: "Обезболивающие стредсво",
+                                                                  price: 215,
+                                                                  rate: 4.4),
+                                                   RussianProduct(name: "Миг",
+                                                                  description: "Обезболивающие стредсво",
+                                                                  price: 147,
+                                                                  rate: 4.5)],
+                                       category: .medicines),
+                         ImportProduct(name: "Эквапресс",
+                                       description: "Препарат для снижения АД",
+                                       analogues: [RussianProduct(name: "Капотон",
+                                                                  description: "Препарат для снижения АД",
+                                                                  price: 290,
+                                                                  rate: 4.3),
+                                                   RussianProduct(name: "Эналаприл",
+                                                                  description: "Препарат для снижения АД",
+                                                                  price: 87,
+                                                                  rate: 4.1),
+                                                   RussianProduct(name: "Трипликсам",
+                                                                  description: "Препарат для снижения АД",
+                                                                  price: 647,
+                                                                  rate: 4.5)],
+                                       category: .medicines)
+    ]
+    
+    private init() {}
 }
