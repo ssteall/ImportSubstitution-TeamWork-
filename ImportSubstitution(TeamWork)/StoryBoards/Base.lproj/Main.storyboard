@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X7N-Q9-DcO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X7N-Q9-DcO">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -137,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="140" y="759.67016491754134"/>
         </scene>
-        <!--Item-->
+        <!--Импортные продукты-->
         <scene sceneID="U4g-GJ-hLt">
             <objects>
                 <tableViewController id="nMa-74-Ju3" customClass="ImportProductTableViewController" customModule="ImportSubstitution_TeamWork_" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +154,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="T6J-mz-96w" kind="show" id="DeZ-xn-OBv"/>
+                                    <segue destination="T6J-mz-96w" kind="show" identifier="" id="DeZ-xn-OBv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -164,38 +164,71 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="Vwg-MC-KZB"/>
-                    <navigationItem key="navigationItem" id="X2u-UD-nyH"/>
+                    <navigationItem key="navigationItem" title="Импортные продукты" id="X2u-UD-nyH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Yx-BZ-PsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2559" y="52"/>
         </scene>
-        <!--View Controller-->
+        <!--Российские продукты-->
         <scene sceneID="ZnA-s6-mSx">
             <objects>
-                <viewController id="T6J-mz-96w" sceneMemberID="viewController">
+                <viewController id="T6J-mz-96w" customClass="DescriptionImportProductViewController" customModule="ImportSubstitution_TeamWork_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7n1-Ef-j2o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGz-pW-dOS">
-                                <rect key="frame" x="174" y="536" width="67" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цена" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8o-Hm-RJJ">
+                                <rect key="frame" x="20" y="480" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEc-FQ-QXg">
+                                <rect key="frame" x="20" y="521" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1k-ef-DrY">
+                                <rect key="frame" x="140" y="592" width="95" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="NfT-9b-NK9" kind="show" id="onJ-FM-n2c"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="plain" title="Аналог"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N9-cH-Ssx">
+                                <rect key="frame" x="20" y="146" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7xj-Pd-ano"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7xj-Pd-ano" firstAttribute="trailing" secondItem="AEc-FQ-QXg" secondAttribute="trailing" constant="20" id="0b8-Zc-xUd"/>
+                            <constraint firstItem="AEc-FQ-QXg" firstAttribute="top" secondItem="p8o-Hm-RJJ" secondAttribute="bottom" constant="20" id="6P9-Mo-lhQ"/>
+                            <constraint firstItem="7xj-Pd-ano" firstAttribute="trailing" secondItem="4N9-cH-Ssx" secondAttribute="trailing" constant="20" id="7tO-pp-baO"/>
+                            <constraint firstItem="4N9-cH-Ssx" firstAttribute="leading" secondItem="7xj-Pd-ano" secondAttribute="leading" constant="20" id="BpK-Yy-DCq"/>
+                            <constraint firstItem="7xj-Pd-ano" firstAttribute="bottom" secondItem="I1k-ef-DrY" secondAttribute="bottom" constant="44" id="Laf-Tf-YIP"/>
+                            <constraint firstItem="I1k-ef-DrY" firstAttribute="top" secondItem="AEc-FQ-QXg" secondAttribute="bottom" constant="50" id="SQO-jO-lmu"/>
+                            <constraint firstItem="AEc-FQ-QXg" firstAttribute="leading" secondItem="7xj-Pd-ano" secondAttribute="leading" constant="20" id="SSR-Ic-QM2"/>
+                            <constraint firstItem="7xj-Pd-ano" firstAttribute="trailing" secondItem="p8o-Hm-RJJ" secondAttribute="trailing" constant="20" id="Zdc-mE-Qcf"/>
+                            <constraint firstItem="4N9-cH-Ssx" firstAttribute="top" secondItem="7xj-Pd-ano" secondAttribute="top" constant="50" id="b39-oM-JUg"/>
+                            <constraint firstItem="7xj-Pd-ano" firstAttribute="trailing" secondItem="I1k-ef-DrY" secondAttribute="trailing" constant="140" id="ePx-9c-RSL"/>
+                            <constraint firstItem="I1k-ef-DrY" firstAttribute="leading" secondItem="7xj-Pd-ano" secondAttribute="leading" constant="140" id="qo8-qo-i4v"/>
+                            <constraint firstItem="p8o-Hm-RJJ" firstAttribute="leading" secondItem="7xj-Pd-ano" secondAttribute="leading" constant="20" id="z6c-Z0-mjW"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J0F-m3-LRY"/>
+                    <navigationItem key="navigationItem" title="Российские продукты" id="J0F-m3-LRY"/>
+                    <connections>
+                        <outlet property="descriptionProductLabel" destination="4N9-cH-Ssx" id="RS0-8S-TJo"/>
+                        <outlet property="priceProductLabel" destination="p8o-Hm-RJJ" id="IMW-1M-x9Q"/>
+                        <outlet property="rateProductLabel" destination="AEc-FQ-QXg" id="4FB-L7-JnQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfG-iN-7Kn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3308" y="51"/>
+            <point key="canvasLocation" x="3308" y="50.824587706146929"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="r1v-5l-iEm">
@@ -285,7 +318,7 @@
             </objects>
             <point key="canvasLocation" x="1748" y="793"/>
         </scene>
-        <!--Category Table View Controller-->
+        <!--Импортные продукты-->
         <scene sceneID="Pu2-nq-Mi0">
             <objects>
                 <tableViewController modalPresentationStyle="fullScreen" id="GcX-Qc-W4u" customClass="CategoryTableViewController" customModule="ImportSubstitution_TeamWork_" customModuleProvider="target" sceneMemberID="viewController">
@@ -302,7 +335,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="nMa-74-Ju3" kind="show" id="r4V-mM-WSq"/>
+                                    <segue destination="nMa-74-Ju3" kind="show" identifier="" id="r4V-mM-WSq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -312,18 +345,18 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="search" id="lLQ-2m-e25"/>
-                    <navigationItem key="navigationItem" id="iA9-WY-K2Y"/>
+                    <navigationItem key="navigationItem" title="Импортные продукты" id="iA9-WY-K2Y"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3q-ww-kM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1769" y="51"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Категории-->
         <scene sceneID="Vag-xc-xng">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9kV-Iq-o3j" customClass="TabBarViewController" customModule="ImportSubstitution_TeamWork_" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="D8q-fp-rYG"/>
+                    <navigationItem key="navigationItem" title="Категории" id="D8q-fp-rYG"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H2A-EM-rBq">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -343,8 +376,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X7N-Q9-DcO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0PT-ur-Okp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="0PT-ur-Okp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
