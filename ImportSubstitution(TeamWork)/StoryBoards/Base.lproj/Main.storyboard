@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="141" y="52"/>
         </scene>
-        <!--Developers View Controller-->
+        <!--View Controller-->
         <scene sceneID="7wE-51-rvc">
             <objects>
-                <viewController id="4tZ-NQ-ZqI" customClass="DevelopersViewController" customModule="ImportSubstitution_TeamWork_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4tZ-NQ-ZqI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sCm-DF-gb7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
