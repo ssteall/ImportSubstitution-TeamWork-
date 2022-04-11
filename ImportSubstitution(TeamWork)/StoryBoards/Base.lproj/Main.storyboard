@@ -270,7 +270,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Добавить в избранное"/>
                                 <connections>
-                                    <segue destination="xy8-uf-dy4" kind="show" id="fHL-zV-c35"/>
+                                    <action selector="favoritesButton:" destination="Dpd-Ub-1ME" eventType="touchUpInside" id="G3I-Hp-o0L"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-qY-7B3">
@@ -348,6 +348,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Dpd-Ub-1ME" kind="show" id="uAO-GM-3jW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -388,10 +391,8 @@
                             <outlet property="delegate" destination="GcX-Qc-W4u" id="GwQ-fa-iB3"/>
                         </connections>
                     </tableView>
-
                     <tabBarItem key="tabBarItem" systemItem="search" id="lLQ-2m-e25"/>
                     <navigationItem key="navigationItem" title="Импортные продукты" id="iA9-WY-K2Y"/>
-
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3q-ww-kM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -437,11 +438,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fHL-zV-c35"/>
+        <segue reference="uAO-GM-3jW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logo" width="600" height="250"/>
-        <image name="magni" width="128" height="128"/>
         <image name="Ибупрофен" width="772" height="772"/>
         <image name="Кагоцел" width="320" height="320"/>
         <image name="Капотен" width="225" height="225"/>
