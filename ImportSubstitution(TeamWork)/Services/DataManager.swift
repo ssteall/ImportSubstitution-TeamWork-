@@ -130,7 +130,7 @@ class DataManager {
                                        category: .medicines),
                          ImportProduct(name: "Эквапресс",
                                        description: "Препарат для снижения АД",
-                                       analogues: [RussianProduct(name: "Капотен",
+                                       analogues: [RussianProduct(name: "Капотон",
                                                                   description: "Препарат для снижения АД",
                                                                   price: 290,
                                                                   rate: 4.3),
