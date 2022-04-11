@@ -44,5 +44,4 @@ enum Category: String {
     case medicines = "Лекартсва"
     case food = "Продукты питания"
     case software = "Программное обеспечение"
-    case sports = "Спортивная одежда"
 }
