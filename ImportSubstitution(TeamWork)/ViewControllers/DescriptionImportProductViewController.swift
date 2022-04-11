@@ -10,8 +10,9 @@ import UIKit
 class DescriptionImportProductViewController: UIViewController {
     
     @IBOutlet weak var descriptionProductLabel: UILabel!
-    @IBOutlet weak var priceProductLabel: UILabel!
-    @IBOutlet weak var rateProductLabel: UILabel!
+    
+    @IBOutlet weak var productImage: UIImageView!
+    
     
     var descriptionImportProduct: ImportProduct!
     
@@ -21,18 +22,21 @@ class DescriptionImportProductViewController: UIViewController {
         title = descriptionImportProduct.name
         descriptionProductLabel.text = descriptionImportProduct.description
         
-
+        productImage.image = UIImage(named: descriptionImportProduct.name)
+        
+        productImage.layer.cornerRadius = productImage.frame.height / 2
+        
     }
     
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let analogVC = segue.destination as? RussProductTableViewController else { return }
+        analogVC.analogProduct = descriptionImportProduct.analogues
+
     }
-    */
+    @IBAction func analogProductButton(_ sender: Any) {
+        
+    }
+    
 
 }

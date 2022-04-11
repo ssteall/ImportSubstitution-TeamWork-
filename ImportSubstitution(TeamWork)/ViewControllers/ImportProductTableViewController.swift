@@ -26,7 +26,8 @@ class ImportProductTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "importProduct", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        content.text = importProducts[indexPath.row].name
+        let product = importProducts[indexPath.row]
+        content.text = product.name
         cell.contentConfiguration = content
         return cell
     }

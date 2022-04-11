@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		76BDBB5D280377B600462666 /* DescriptionImportProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BDBB5C280377B600462666 /* DescriptionImportProductViewController.swift */; };
+		76BDBB5F28040FA700462666 /* RussProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BDBB5E28040FA700462666 /* RussProductTableViewController.swift */; };
+		76BDBB612804178500462666 /* DescriptionAnalogProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BDBB602804178500462666 /* DescriptionAnalogProductViewController.swift */; };
 		BCCF2C6E2800E1570031A449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF2C6D2800E1570031A449 /* AppDelegate.swift */; };
 		BCCF2C702800E1570031A449 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF2C6F2800E1570031A449 /* SceneDelegate.swift */; };
 		BCCF2C752800E1570031A449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCF2C732800E1570031A449 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		76BDBB5C280377B600462666 /* DescriptionImportProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionImportProductViewController.swift; sourceTree = "<group>"; };
+		76BDBB5E28040FA700462666 /* RussProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussProductTableViewController.swift; sourceTree = "<group>"; };
+		76BDBB602804178500462666 /* DescriptionAnalogProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionAnalogProductViewController.swift; sourceTree = "<group>"; };
 		BCCF2C6A2800E1570031A449 /* ImportSubstitution(TeamWork).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ImportSubstitution(TeamWork).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCF2C6D2800E1570031A449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCCF2C6F2800E1570031A449 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				BCCF2C8D280233030031A449 /* FavoriteTableViewController.swift */,
 				BCCF2C8F28023A750031A449 /* ImportProductTableViewController.swift */,
 				76BDBB5C280377B600462666 /* DescriptionImportProductViewController.swift */,
+				76BDBB5E28040FA700462666 /* RussProductTableViewController.swift */,
+				76BDBB602804178500462666 /* DescriptionAnalogProductViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,7 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BDBB5F28040FA700462666 /* RussProductTableViewController.swift in Sources */,
 				BCCF2C822800E1BF0031A449 /* DataManager.swift in Sources */,
+				76BDBB612804178500462666 /* DescriptionAnalogProductViewController.swift in Sources */,
 				BCCF2C842800E1E80031A449 /* Product.swift in Sources */,
 				76BDBB5D280377B600462666 /* DescriptionImportProductViewController.swift in Sources */,
 				BCCF2C6E2800E1570031A449 /* AppDelegate.swift in Sources */,
