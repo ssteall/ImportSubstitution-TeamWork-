@@ -13,8 +13,6 @@ class ImportProductTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.rowHeight = 60
 
     }
 
@@ -30,8 +28,6 @@ class ImportProductTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         let product = importProducts[indexPath.row]
         content.text = product.name
-        content.image = UIImage(named: product.name)
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         return cell
     }

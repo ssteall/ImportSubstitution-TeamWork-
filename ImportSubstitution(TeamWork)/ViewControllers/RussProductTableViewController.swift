@@ -13,8 +13,6 @@ class RussProductTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.rowHeight = 60
 
     }
 
@@ -30,8 +28,6 @@ class RussProductTableViewController: UITableViewController {
         var context = cell.defaultContentConfiguration()
         let analog = analogProduct[indexPath.row]
         context.text = analog.name
-        context.image = UIImage(named: analog.name)
-        context.imageProperties.cornerRadius = tableView.rowHeight / 2
 
         cell.contentConfiguration = context
         return cell
