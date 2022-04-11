@@ -341,7 +341,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteProduct" id="liM-5W-kbY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="liM-5W-kbY">
                                 <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="liM-5W-kbY" id="SvM-V0-fgj">
@@ -388,10 +388,8 @@
                             <outlet property="delegate" destination="GcX-Qc-W4u" id="GwQ-fa-iB3"/>
                         </connections>
                     </tableView>
-
                     <tabBarItem key="tabBarItem" systemItem="search" id="lLQ-2m-e25"/>
                     <navigationItem key="navigationItem" title="Импортные продукты" id="iA9-WY-K2Y"/>
-
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3q-ww-kM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -441,7 +439,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logo" width="600" height="250"/>
-        <image name="magni" width="128" height="128"/>
         <image name="Ибупрофен" width="772" height="772"/>
         <image name="Кагоцел" width="320" height="320"/>
         <image name="Капотен" width="225" height="225"/>

@@ -30,7 +30,7 @@ class RussianProduct {
     let description: String
     let price: Double
     let rate: Double
-    var chosen = false
+    let chosen = false
     
     init(name: String, description: String, price: Double, rate: Double){
         self.name = name
