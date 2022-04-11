@@ -13,7 +13,6 @@ class ImportProductTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // MARK: - Table view data source
@@ -21,13 +20,16 @@ class ImportProductTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return importProducts.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "importProduct", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let product = importProducts[indexPath.row]
         content.text = product.name
+        content.image = UIImage(named: product.name)
+        content.imageProperties.maximumSize.height = 50
+        content.imageProperties.maximumSize.width = 50
+        content.imageProperties.cornerRadius = 25
         cell.contentConfiguration = content
         return cell
     }

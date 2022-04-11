@@ -9,11 +9,11 @@ import UIKit
 
 class RussProductTableViewController: UITableViewController {
     
+    @IBOutlet var priceLabel: UILabel!
     var analogProduct: [RussianProduct] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // MARK: - Table view data source
@@ -25,11 +25,14 @@ class RussProductTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "analogCell", for: indexPath)
-        var context = cell.defaultContentConfiguration()
+        var content = cell.defaultContentConfiguration()
         let analog = analogProduct[indexPath.row]
-        context.text = analog.name
-
-        cell.contentConfiguration = context
+        content.text = analog.name
+        content.image = UIImage(named: analog.name)
+        content.imageProperties.maximumSize.height = 50
+        content.imageProperties.maximumSize.width = 50
+        content.imageProperties.cornerRadius = 25
+        cell.contentConfiguration = content
         return cell
     }
 

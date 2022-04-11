@@ -10,22 +10,15 @@ import UIKit
 class DescriptionImportProductViewController: UIViewController {
     
     @IBOutlet weak var descriptionProductLabel: UILabel!
-    
     @IBOutlet weak var productImage: UIImageView!
-    
     
     var descriptionImportProduct: ImportProduct!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = descriptionImportProduct.name
         descriptionProductLabel.text = descriptionImportProduct.description
-        
         productImage.image = UIImage(named: descriptionImportProduct.name)
-        
-        productImage.layer.cornerRadius = productImage.frame.height / 2
-        
     }
     
     // MARK: - Navigation
