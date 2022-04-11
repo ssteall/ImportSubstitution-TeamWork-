@@ -41,7 +41,15 @@ class FavoriteTableViewController: UITableViewController {
 
         return cell
     }
-    */
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let index = tableView.indexPathForSelectedRow {
+            let descriptionVC = segue.destination as! DescriptionAnalogProductViewController
+            descriptionVC.descriptionProduct = favoriteProducts[index.row]
+        }
+       
+    }
+
 
     /*
     // Override to support conditional editing of the table view.
