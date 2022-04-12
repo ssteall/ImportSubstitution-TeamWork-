@@ -15,14 +15,14 @@ class FavoriteTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getFavoriteProduct()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        getFavoriteProduct()
+        tableView.reloadData()
         getDeleteFavoriteProduct()
         self.tabBarController?.navigationItem.title = "Избранное"
-        tableView.reloadData()
     }
     
 
@@ -54,9 +54,10 @@ class FavoriteTableViewController: UITableViewController {
     }
 
     private func getFavoriteProduct() {
+        favoriteProducts = []
         for product in importProducts {
             for rusProduct in product.analogues {
-                if rusProduct.chosen == true {
+                if rusProduct.chosen {
                     favoriteProducts.append(rusProduct)
                 }
             }
@@ -65,7 +66,7 @@ class FavoriteTableViewController: UITableViewController {
     
     private func getDeleteFavoriteProduct() {
         for product in favoriteProducts {
-            if product.chosen == false {
+            if !product.chosen {
                 favoriteProducts = favoriteProducts.filter{ $0 !== product }
                 tableView.reloadData()
             }
