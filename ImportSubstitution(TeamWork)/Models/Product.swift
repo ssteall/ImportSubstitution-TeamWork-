@@ -30,7 +30,7 @@ class RussianProduct {
     let description: String
     let price: Double
     let rate: Double
-    let chosen = false
+    var chosen = false
     
     init(name: String, description: String, price: Double, rate: Double){
         self.name = name
@@ -44,4 +44,5 @@ enum Category: String {
     case medicines = "Лекартсва"
     case food = "Продукты питания"
     case software = "Программное обеспечение"
+    case sports = "Спортивные товары"
 }

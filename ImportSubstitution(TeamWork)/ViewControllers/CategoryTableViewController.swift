@@ -17,6 +17,7 @@ class CategoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getCategoryList()
+        title = "Выбор категории"
     }
 
     // MARK: - Table view data source
@@ -29,6 +30,9 @@ class CategoryTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "category", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.text = categories[indexPath.row]
+        content.image = UIImage(named: categories[indexPath.row])
+        content.imageProperties.maximumSize.height = 50
+        content.imageProperties.maximumSize.width = 50
         cell.contentConfiguration = content
         return cell
     }
