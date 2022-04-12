@@ -269,7 +269,9 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Добавить в избранное"/>
                                 <connections>
+
                                     <action selector="favoritesButton:" destination="Dpd-Ub-1ME" eventType="touchUpInside" id="zMp-ti-4RT"/>
+
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-qY-7B3">
@@ -371,6 +373,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="Dpd-Ub-1ME" kind="show" id="IQS-d8-bFg"/>
+                                    <segue destination="Dpd-Ub-1ME" kind="show" id="uAO-GM-3jW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
