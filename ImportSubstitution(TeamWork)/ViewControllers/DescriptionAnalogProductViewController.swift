@@ -27,7 +27,6 @@ class DescriptionAnalogProductViewController: UIViewController {
         setFavoriteButton()
     }
     
-
     @IBAction func favoritesButton(_ sender: Any) {
         if descriptionProduct.chosen {
             descriptionProduct.chosen.toggle()
