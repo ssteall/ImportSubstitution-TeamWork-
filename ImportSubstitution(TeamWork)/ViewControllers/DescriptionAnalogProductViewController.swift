@@ -40,7 +40,7 @@ class DescriptionAnalogProductViewController: UIViewController {
         }
         
     }
-    @IBAction func homButton(_ sender: Any) {
+    @IBAction func homeButton(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
     

@@ -10,10 +10,6 @@ import UIKit
 class ImportProductTableViewController: UITableViewController {
 
     var importProducts: [ImportProduct]!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     // MARK: - Table view data source
 
@@ -44,8 +40,5 @@ class ImportProductTableViewController: UITableViewController {
             let descriptionVC = segue.destination as! DescriptionImportProductViewController
             descriptionVC.descriptionImportProduct = importProducts[indexPath.row]
         }
-        
     }
-    
-
 }

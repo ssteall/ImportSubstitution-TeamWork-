@@ -12,16 +12,11 @@ class RussProductTableViewController: UITableViewController {
     @IBOutlet var priceLabel: UILabel!
     var analogProduct: [RussianProduct] = []
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return analogProduct.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "analogCell", for: indexPath)
