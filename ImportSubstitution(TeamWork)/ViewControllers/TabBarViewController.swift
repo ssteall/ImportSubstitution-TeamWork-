@@ -14,6 +14,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         transferDataToVC()
+        title = "Выбор категории"
     }
     
     private func transferDataToVC() {
@@ -23,5 +24,7 @@ class TabBarViewController: UITabBarController {
         
         categoryVC.importProducts = importProducts
         favoriteVC.importProducts = importProducts
+        
     }
+    
 }

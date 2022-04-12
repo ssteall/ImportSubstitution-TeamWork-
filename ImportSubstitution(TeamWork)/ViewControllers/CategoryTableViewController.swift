@@ -17,7 +17,11 @@ class CategoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getCategoryList()
-        title = "Выбор категории"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.navigationItem.title = "Выбор категории"
     }
 
     // MARK: - Table view data source
@@ -29,10 +33,13 @@ class CategoryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "category", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        content.text = categories[indexPath.row]
-        content.image = UIImage(named: categories[indexPath.row])
+        
+        let category = categories[indexPath.row]
+        content.text = category
+        content.image = UIImage(named: category)
         content.imageProperties.maximumSize.height = 50
         content.imageProperties.maximumSize.width = 50
+        content.imageProperties.cornerRadius = 25
         cell.contentConfiguration = content
         return cell
     }

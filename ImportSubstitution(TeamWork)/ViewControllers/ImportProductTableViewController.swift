@@ -25,12 +25,14 @@ class ImportProductTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "importProduct", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let product = importProducts[indexPath.row]
+        
         content.text = product.name
         content.image = UIImage(named: product.name)
         content.imageProperties.maximumSize.height = 50
         content.imageProperties.maximumSize.width = 50
         content.imageProperties.cornerRadius = 25
         cell.contentConfiguration = content
+        
         return cell
     }
         

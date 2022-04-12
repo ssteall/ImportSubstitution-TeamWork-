@@ -17,22 +17,30 @@ class FavoriteTableViewController: UITableViewController {
         super.viewDidLoad()
         getFavoriteProduct()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getDeleteFavoriteProduct()
+        self.tabBarController?.navigationItem.title = "Избранное"
+        tableView.reloadData()
+    }
+    
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         favoriteProducts.count
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        80
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteProduct", for: indexPath)
         var content = cell.defaultContentConfiguration()
+        let product = favoriteProducts[indexPath.row]
         
-        content.text = favoriteProducts[indexPath.row].name
-        content.image = UIImage(named: favoriteProducts[indexPath.row].name)
+        content.text = product.name
+        content.image = UIImage(named: product.name)
+        content.imageProperties.maximumSize.height = 50
+        content.imageProperties.maximumSize.width = 50
+        content.imageProperties.cornerRadius = 25
         cell.contentConfiguration = content
         
         return cell
@@ -51,6 +59,15 @@ class FavoriteTableViewController: UITableViewController {
                 if rusProduct.chosen == true {
                     favoriteProducts.append(rusProduct)
                 }
+            }
+        }
+    }
+    
+    private func getDeleteFavoriteProduct() {
+        for product in favoriteProducts {
+            if product.chosen == false {
+                favoriteProducts = favoriteProducts.filter{ $0 !== product }
+                tableView.reloadData()
             }
         }
     }

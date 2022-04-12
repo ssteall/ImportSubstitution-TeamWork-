@@ -27,12 +27,14 @@ class RussProductTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "analogCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let analog = analogProduct[indexPath.row]
+        
         content.text = analog.name
         content.image = UIImage(named: analog.name)
         content.imageProperties.maximumSize.height = 50
         content.imageProperties.maximumSize.width = 50
         content.imageProperties.cornerRadius = 25
         cell.contentConfiguration = content
+        
         return cell
     }
 

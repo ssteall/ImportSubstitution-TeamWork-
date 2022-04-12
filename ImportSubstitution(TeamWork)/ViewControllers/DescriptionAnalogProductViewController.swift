@@ -38,8 +38,12 @@ class DescriptionAnalogProductViewController: UIViewController {
             showAlert(title: "Избранное", massage: "Товар добавлен в избранное")
             setFavoriteButton()
         }
+        
     }
-
+    @IBAction func homButton(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     private func showAlert(title: String, massage: String){
         let alert = UIAlertController(title: title,
                                       message: massage,
@@ -57,6 +61,7 @@ class DescriptionAnalogProductViewController: UIViewController {
             favoriteButton.setTitle("Добавить в избранное", for: .normal)
             favoriteButton.setTitleColor(.systemBlue, for: .normal)
         }
+        
     }
     
 }
