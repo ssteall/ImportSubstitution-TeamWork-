@@ -12,11 +12,7 @@ class FavoriteTableViewController: UITableViewController {
     var importProducts: [ImportProduct]!
     
     private var favoriteProducts: [RussianProduct] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getFavoriteProduct()

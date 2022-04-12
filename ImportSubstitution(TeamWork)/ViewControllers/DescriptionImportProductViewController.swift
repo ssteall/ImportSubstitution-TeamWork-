@@ -28,7 +28,6 @@ class DescriptionImportProductViewController: UIViewController {
 
     }
     @IBAction func analogProductButton(_ sender: Any) {
-        
     }
     
 

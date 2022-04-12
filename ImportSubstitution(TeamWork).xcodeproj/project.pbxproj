@@ -21,7 +21,6 @@
 		BCCF2C8E280233030031A449 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF2C8D280233030031A449 /* FavoriteTableViewController.swift */; };
 		BCCF2C9028023A750031A449 /* ImportProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF2C8F28023A750031A449 /* ImportProductTableViewController.swift */; };
 		BCCF2C9428023CAF0031A449 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF2C9328023CAF0031A449 /* TabBarViewController.swift */; };
-		BCCF2C962804C5360031A449 /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF2C952804C5360031A449 /* DevelopersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 		BCCF2C8D280233030031A449 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		BCCF2C8F28023A750031A449 /* ImportProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportProductTableViewController.swift; sourceTree = "<group>"; };
 		BCCF2C9328023CAF0031A449 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		BCCF2C952804C5360031A449 /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +127,6 @@
 				76BDBB5C280377B600462666 /* DescriptionImportProductViewController.swift */,
 				76BDBB5E28040FA700462666 /* RussProductTableViewController.swift */,
 				76BDBB602804178500462666 /* DescriptionAnalogProductViewController.swift */,
-				BCCF2C952804C5360031A449 /* DevelopersViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BDBB5F28040FA700462666 /* RussProductTableViewController.swift in Sources */,
-				BCCF2C962804C5360031A449 /* DevelopersViewController.swift in Sources */,
 				BCCF2C822800E1BF0031A449 /* DataManager.swift in Sources */,
 				76BDBB612804178500462666 /* DescriptionAnalogProductViewController.swift in Sources */,
 				BCCF2C842800E1E80031A449 /* Product.swift in Sources */,
@@ -376,6 +372,7 @@
 				DEVELOPMENT_TEAM = J9VF8UL9WD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ImportSubstitution(TeamWork)/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Импортозамещение";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -405,6 +402,7 @@
 				DEVELOPMENT_TEAM = J9VF8UL9WD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ImportSubstitution(TeamWork)/App/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Импортозамещение";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
